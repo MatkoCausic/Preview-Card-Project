@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+		<title>Frontend Mentor | Product preview card component</title>
+
+		<style>
+			body{
+				background-color:hsl(30, 38%, 92%);
+				min-height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;}
+			img{
+				height:450px;
+				width:300px;
+				border-radius:10px 0px 0px 10px;}
+			main{
+				background-color:white;
+				border-radius:10px;
+				width:600px;
+				height:450px;
+				display:flex}
+			.below{
+				display:grid;}
+			.next{
+				display:flex;}
+			.text1{
+				margin-top:35px;
+				margin-bottom:0px;
+				margin-left:25px;
+				font-size:14px;
+				letter-spacing:5px;
+				font-family:Montserrat;
+				color:gray;
+				font-weight;500;
+				height:15px;}
+			.text2{
+				margin-top:15px;
+				margin-bottom:0px;
+				margin-left:25px;
+				font-weight:700;
+				font-family:Fraunces;
+				width:200px;
+				height:85px;
+				line-height:0.9;}
+			.text3{
+				margin-top:40px;
+				margin-bottom:0px;
+				margin-left:25px;
+				padding-right:51px;
+				font-weight:500;
+				font-family:Montserrat;
+				color:gray;
+				height:85px;
+				line-height:1.4;}
+			.price1{
+				color:hsl(158, 36%, 37%);
+				margin-top:30px;
+				margin-bottom:0px;
+				margin-left:25px;}
+			.price2{
+				color:gray;
+				margin-top:38px;
+				margin-bottom:0px;
+				margin-left:20px;
+				}
+			.buy{
+				height:45px;
+				width:235px;
+				margin-left:105px;
+				margin-top:-33px;
+				color:white;
+				font-weight:500;}
+			#square{
+				width:235px;
+				height:45px;
+				margin-left:25px;
+				margin-top:30px;
+				border-radius:10px;
+				background-color:hsl(158,36%,37%);}
+			#square:hover{
+				background-color:hsl(228, 12%, 48%);}
+		</style>
+	</head>
+	<body>
+		<main>
+				<img src="./images/image-product-desktop.jpg" alt="Gabrielle Chanel parfume">
+				<div>
+					<p class="text1">PERFUME</p>
+					<h1 class="text2">Gabrielle Essence Eau De Parfum</h1>
+					<p class="text3">A floral,solar and voluptuous interpretation composed by Olivier Polge, Pefrumer-Creator for the House of CHANEL.</p>
+					<div class="next">
+						<h1 class="price1">$149.99</h1><p class="price2"><del>$169.99</del></p>
+					</div>
+					<div id="square"><p></div>
+					<p class="buy">Add to Cart</p>
+				</div>
+		</main>
+	</body>
+</html>
